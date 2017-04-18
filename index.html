@@ -168,24 +168,13 @@
         <h2 id="Hexo-简述"><a href="#Hexo-简述" class="headerlink" title="Hexo 简述"></a>Hexo 简述</h2><p>Hexo是一个开源的静态博客生成器，用node.js开发，作者是台湾大学生tommy351。  </p>
 <p>现在github上构建自己的静态博客，可以最大限度的保留控制权的前提下，由别人托管。现就简要分析下构建的过程。  </p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li><a href="http://git-scm.com/download/" target="_blank" rel="external">GIt</a>  </li>
-<li><a href="https://nodejs.org/download/" target="_blank" rel="external">node.js</a>  </li>
+<li><a href="http://git-scm.com/download/">GIt</a>  </li>
+<li><a href="https://nodejs.org/download/">node.js</a>  </li>
 </ul>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>鼠标右键打开Git Bash<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>cd <span class="symbol">d:</span>/hexo</div><div class="line"><span class="variable">$ </span>npm install hexo-cli -g</div><div class="line"><span class="variable">$ </span>hexo init blog</div><div class="line"><span class="variable">$ </span>cd blog</div><div class="line"><span class="variable">$ </span>npm install</div><div class="line"><span class="variable">$ </span>hexo g <span class="comment"># 或者hexo generate</span></div><div class="line"><span class="variable">$ </span>hexo s <span class="comment"># 或者hexo server，可以在http://localhost:4000/ 查看</span></div></pre></td></tr></table></figure></p>
-<p><code>npm install hexo-cli -g</code>执行报错<code>npm err! windows_nt 6.1.7601</code></p>
-<p>解决方案：npm proxy设置异常，重新设置proxy config后OK  </p>
-<h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><p>hexo generate (hexo g) 生成静态文件，会在当前目录下生成一个新的叫做public的文件夹<br>hexo server (hexo s) 启动本地web服务，用于博客的预览<br>hexo deploy (hexo d) 部署博客到Github  </p>
-<p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面</p>
-<h2 id="Hexo-主题设置"><a href="#Hexo-主题设置" class="headerlink" title="Hexo 主题设置"></a>Hexo 主题设置</h2><p>$ hexo clean<br>$ git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>修改Hexo目录下的_config.yml配置文件中的theme属性，将其设置为yilia。</p>
-<h2 id="什么是Github-Pages"><a href="#什么是Github-Pages" class="headerlink" title="什么是Github Pages"></a>什么是Github Pages</h2><p>每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是username/username.github.io，这是特殊的命名约定。你可以通过<a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a> 来访问你的个人主页。</p>
-<h2 id="部署Hexo到Github-Pages"><a href="#部署Hexo到Github-Pages" class="headerlink" title="部署Hexo到Github Pages"></a>部署Hexo到Github Pages</h2><p>hexo deploy 如果部署到github，需要在配置文件_config.xml中作如下修改：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">deploy</span>:</div><div class="line">  <span class="attribute">type</span>: git</div><div class="line">  <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:chenzio/chenzio.github.io.git</div><div class="line">  <span class="attribute">branch</span>: master</div></pre></td></tr></table></figure></p>
-<p>然后在命令行中执行<br><code>hexo d</code><br>即可完成部署。</p>
-<blockquote>
-<p>参考：</p>
-<p>1 <a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></p>
-<p>2 <a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="external">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></p>
-</blockquote>
-
+        
+          <a class="article-more-a" href="/2017/04/18/使用Hexo在Github上构建个人博客/#more">more >></a>
+        
       
 
       
